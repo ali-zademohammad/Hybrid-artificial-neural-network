@@ -8,9 +8,9 @@ This repository demonstrates the implementation of **Genetic Algorithm (GA)** an
 
 ---
 
-## Table of Contents
-[Genetic Algorithm (GA)](https://github.com/ali-zademohammad/Hybrid-artificial-neural-network/blob/85222e1ac2d5fc77ca618d03a191db3ee77e9880/Genetic%20Algorithm%20(GA).ipynb)
-[Particle Swarm Optimization (PSO)](#particle-swarm-optimization-pso)
+## Github
+[Genetic Algorithm (GA)](https://github.com/ali-zademohammad/Hybrid-artificial-neural-network/blob/85222e1ac2d5fc77ca618d03a191db3ee77e9880/Genetic%20Algorithm%20(GA).ipynb)    
+[Particle Swarm Optimization (PSO)](https://github.com/ali-zademohammad/Hybrid-artificial-neural-network/blob/33919aae14fab6bc22a62c35be38ae3b8912f5dc/Particle%20Swarm%20Optimization%20(PSO).ipynb)
 
 ---
 
