@@ -1,85 +1,53 @@
-# Hybrid Artificial Neural Network Optimization (GA & PSO)
+# Hybrid Artificial Neural Network Optimization with GA and PSO
 
-This repository demonstrates the use of **Genetic Algorithm (GA)** and **Particle Swarm Optimization (PSO)** in optimizing Artificial Neural Networks (ANN). The implementation is divided into three stages: 
+This repository demonstrates the implementation of **Genetic Algorithm (GA)** and **Particle Swarm Optimization (PSO)** in optimizing **Artificial Neural Networks (ANN)**. The project is divided into two main sections for each algorithm (GA and PSO), covering:
 
-1. **Simple GA Example**: Optimization of a basic mathematical function \(x^2\).
-2. **MLP Model Creation**: Training an ANN on the California Housing dataset.
-3. **Hybrid ANN Optimization**: Combining ANN with GA and PSO for advanced optimization.
+1. A simple mathematical optimization example using \(x^2\).
+2. Building and training an **MLP** (Multi-Layer Perceptron) model with the **California Housing Dataset**.
+3. Combining **ANN** with GA and PSO to optimize weights and biases, enhancing performance compared to traditional backpropagation.
 
 ---
 
 ## Table of Contents
 
 1. [Introduction](#introduction)
-2. [Project Workflow](#project-workflow)
-3. [How It Works](#how-it-works)
-    - [Stage 1: Simple GA](#stage-1-simple-ga)
-    - [Stage 2: MLP Model Creation](#stage-2-mlp-model-creation)
-    - [Stage 3: Hybrid Optimization](#stage-3-hybrid-optimization)
-4. [Installation](#installation)
-5. [Usage](#usage)
-6. [Results](#results)
-7. [Files and Structure](#files-and-structure)
-8. [License](#license)
+2. [Project Overview](#project-overview)
+    - [Genetic Algorithm (GA)](#genetic-algorithm-ga)
+    - [Particle Swarm Optimization (PSO)](#particle-swarm-optimization-pso)
+3. [Installation](#installation)
+4. [Usage](#usage)
+5. [Results](#results)
+6. [Files and Structure](#files-and-structure)
+7. [License](#license)
 
 ---
 
 ## Introduction
 
-The optimization of neural networks is critical for achieving high performance. Traditional backpropagation has limitations, such as susceptibility to local minima and dependence on gradient information. **GA** and **PSO** are nature-inspired optimization techniques that improve ANN performance by exploring and exploiting the search space more effectively.
+Traditional backpropagation is widely used for training Artificial Neural Networks (ANNs). However, it has limitations, such as susceptibility to local minima and reliance on gradient information. **Genetic Algorithm (GA)** and **Particle Swarm Optimization (PSO)** are powerful metaheuristic optimization techniques inspired by nature, capable of improving ANN training.
 
-This project covers:
-1. A basic introduction to **GA** through a mathematical optimization example.
-2. Training a **Multi-Layer Perceptron (MLP)** model on a real-world dataset.
-3. Combining **GA** and **PSO** with ANN to demonstrate hybrid optimization.
-
----
-
-## Project Workflow
-
-1. **Stage 1: Simple GA Example**:
-   - Optimize the mathematical function \(f(x) = x^2\) using GA.
-   - Demonstrates the basic workflow of selection, crossover, and mutation.
-
-2. **Stage 2: MLP Model Creation**:
-   - Train a **Multi-Layer Perceptron (MLP)** model using the **California Housing** dataset.
-   - Demonstrates traditional training using backpropagation.
-
-3. **Stage 3: Hybrid Optimization**:
-   - Replace backpropagation with **GA** and **PSO** to optimize ANN weights and biases.
-   - Compare the performance of traditional training vs. hybrid optimization.
+This repository explores:
+1. Basic implementations of GA and PSO for mathematical optimization.
+2. Training a Multi-Layer Perceptron (MLP) on real-world data.
+3. Hybrid ANN optimization using GA and PSO to achieve better performance.
 
 ---
 
-## How It Works
+## Project Overview
 
-### Stage 1: Simple GA
+### Genetic Algorithm (GA)
 
-- **Objective**: Maximize \(f(x) = x^2\) where \(x \in [0, 31]\).
-- **Implementation Steps**:
-  - **Population Initialization**: Randomly generate candidate solutions.
-  - **Selection**: Use fitness-proportional selection (roulette wheel).
-  - **Crossover**: Combine parent solutions to create offspring.
-  - **Mutation**: Randomly alter genes to introduce diversity.
+- **Stage 1**: A simple example optimizing \(x^2\).
+    - Demonstrates how GA works through selection, crossover, and mutation.
+- **Stage 2**: Training an MLP on the **California Housing Dataset** using backpropagation.
+- **Stage 3**: Replacing backpropagation with GA for optimizing MLP weights and biases.
 
-### Stage 2: MLP Model Creation
+### Particle Swarm Optimization (PSO)
 
-- **Dataset**: Uses the **California Housing** dataset, fetched using `sklearn.datasets.fetch_california_housing`.
-- **Model Architecture**:
-  - Input Layer: 8 features.
-  - Hidden Layers: Configurable.
-  - Output Layer: Single neuron (for regression).
-- **Training**:
-  - Loss Function: Mean Squared Error (MSE).
-  - Optimizer: Adam (traditional backpropagation).
-
-### Stage 3: Hybrid Optimization
-
-- **Objective**: Train the MLP using **GA** and **PSO** instead of backpropagation.
-- **Workflow**:
-  - Initialize weights and biases as candidate solutions.
-  - Use **GA** for exploration and **PSO** for fine-tuning.
-  - Evaluate fitness as the negative MSE of the network on the dataset.
+- **Stage 1**: A simple example optimizing \(x^2\).
+    - Demonstrates PSO's particle-based approach.
+- **Stage 2**: Training an MLP on the **California Housing Dataset** using backpropagation.
+- **Stage 3**: Replacing backpropagation with PSO for optimizing MLP weights and biases.
 
 ---
 
